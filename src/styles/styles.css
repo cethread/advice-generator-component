@@ -1,0 +1,75 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
+}
+
+@media screen and (max-width: 23.4375em) {
+  :root {
+    font-size: 80%;
+  }
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.app :nth-child(3) {
+  margin: 0 0 1rem 0;
+}
+.app_container {
+  background-color: hsl(217, 19%, 24%);
+  width: min(100% - 2.5rem, 33.875rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  border-radius: 1rem;
+  padding: 3.125rem;
+  position: relative;
+}
+.app_container_heading {
+  letter-spacing: 0.3rem;
+  color: hsl(150, 100%, 66%);
+  margin: -0.5rem 0 -1rem 0;
+  font-size: 0.8rem;
+}
+.app_container_quote {
+  font-size: 1.75rem;
+}
+.app_container_decoration {
+  content: url("/public/images/pattern-divider-desktop.svg");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.app_container_dice_container {
+  background: hsl(150, 100%, 66%);
+  content: "";
+  border-radius: 10rem;
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app_container_dice_container .dice {
+  content: url("/public/images/icon-dice.svg");
+  width: 1.5rem;
+  height: 1.5rem;
+}/*# sourceMappingURL=styles.css.map */

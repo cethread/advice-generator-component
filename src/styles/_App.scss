@@ -1,0 +1,69 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+
+    :nth-child(3) {
+        margin: 0 0 1rem 0;
+    }
+
+    &_container {
+        background-color: $color-Dark-Grayish-Blue;
+        width: min(100% - 2.5rem , 33.875rem);
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+        border-radius: 1rem;
+        padding: 3.125rem;
+        position: relative;
+
+        &_heading {
+            letter-spacing: 0.3rem;
+            color: $color-Neon-Green;
+            margin: -0.5rem 0 -1rem 0;
+            font-size: 0.8rem;
+        }
+        &_quote {
+            font-size: $font-size-quote;
+            // transform: translateX(-10rem);
+        }
+        &_decoration {
+                content: url('/public/images/pattern-divider-desktop.svg');
+                width: 100%;
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: relative;
+        }
+        &_dice_container {
+            background: $color-Neon-Green;
+            content: '';
+            border-radius: 10rem;
+            width: 4rem;
+            height: 4rem;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+                // :hover {
+                //     filter: drop-shadow(0rem 1.5rem 0.3rem white);
+                //     width: 4rem;
+                //     height: 4rem;
+                // }
+
+                .dice {
+                    content: url('/public/images/icon-dice.svg');
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+        }
+    }
+}
